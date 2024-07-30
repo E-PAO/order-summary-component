@@ -16,6 +16,8 @@
     --dark-blue: hsl(223, 47%, 23%);
 }
 
+
+
 body {
     background-color: var(--pale-blue);
     color: var(--dark-blue);
@@ -103,6 +105,14 @@ button{
     text-align: center;
 }
 
+.red-hat-display {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal; /* Replace with a specific weight like 400, 700, etc., if needed */
+    font-style: normal;
+}
+
+
 h1, h3, h4 {
     font-family: 'Red Hat Display', sans-serif, black 900;
     font-weight: 500;
@@ -188,4 +198,16 @@ margin-right: 15px;
 .order-summary-information {
     margin-top: 13px; 
     margin-bottom: 20px;
+}
+
+@media (min-width: 768px){
+    .bg__image{
+        background: url("./images/pattern-background-desktop.svg")no-repeat 
+        center/cover;
+    height: 50vh;
+    }
+    
+    .container{
+        width: 500px;
+    }
 }
